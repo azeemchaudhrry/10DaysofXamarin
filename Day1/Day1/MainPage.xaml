@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:Day1" x:Class="Day1.MainPage">
+    <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Margin="16">
+        <!-- Place new controls here -->
+        <Entry x:Name="userEntry" Placeholder="Enter your name"/>
+        <Button x:Name="greetUserButton" Clicked="Handle_Clicked" Text="Say Hello"/>
+        <Label x:Name="userGreetingLable" IsVisible="false"/>
+    </StackLayout>
+</ContentPage>
