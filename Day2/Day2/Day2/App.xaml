@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Day2.App">
+    <Application.Resources>
+        <Color x:Key="mainColor">#326273</Color>
+        <Color x:Key="whiteColor">#FFFFFF</Color>
+        <Color x:Key="blackColor">#1C1C1C</Color>
+        <Color x:Key="accentColor">#4392F1</Color>
+        <Color x:Key="destructiveColor">#EF798A</Color>
+        <Color x:Key="secondaryColor">#BFBFBF</Color>
+        
+        <!-- Button Styles -->
+        <Style x:Key="MainButtonStyle" TargetType="Button">
+            <Setter Property="BackgroundColor" Value="{StaticResource accentColor}"/>
+            <Setter Property="TextColor" Value="White"/>
+        </Style>
+        <Style TargetType="Button" x:Key="CancelButtonStyle" BasedOn="{StaticResource MainButtonStyle}">
+            <Setter Property="BackgroundColor" Value="{StaticResource secondaryColor}"/>
+        </Style>
+        <Style TargetType="Button" x:Key="DeleteButtonStyle" BasedOn="{StaticResource MainButtonStyle}">
+            <Setter Property="BackgroundColor" Value="{StaticResource destructiveColor}"/>
+        </Style>
+
+        <!-- Entry Styles -->
+        <Style x:Key="MainEntryStyle" TargetType="Entry">
+            <Setter Property="PlaceholderColor" Value="{StaticResource secondaryColor}"/>
+            <Setter Property="TextColor" Value="{StaticResource blackColor}"/>
+        </Style>
+
+        <!-- Editor Styles -->
+        <Style x:Key="MainEditorStyle" TargetType="Editor">
+            <Setter Property="PlaceholderColor" Value="{StaticResource secondaryColor}"/>
+            <Setter Property="TextColor" Value="{StaticResource blackColor}"/>
+        </Style>
+    </Application.Resources>
+</Application>

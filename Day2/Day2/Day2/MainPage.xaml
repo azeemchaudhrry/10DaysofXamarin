@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Day2"
+             x:Class="Day2.MainPage"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             ios:Page.UseSafeArea="true">
+    <StackLayout 
+        HorizontalOptions="FillAndExpand" 
+        VerticalOptions="FillAndExpand" 
+        Margin="20">
+        <Entry 
+            x:Name="titleEntry" 
+            Placeholder="Enter title of experience" 
+            Style="{StaticResource MainEntryStyle}"
+            TextChanged="TitleEntry_OnTextChanged"/>
+        <Editor 
+            x:Name="contentEditor" 
+            Placeholder="Write your experience" 
+            VerticalOptions="FillAndExpand" 
+            Style="{StaticResource MainEditorStyle}"
+            TextChanged="ContentEntry_OnTextChanged"/>
+        <Button 
+            x:Name="saveBtn" 
+            Text="Save" 
+            IsEnabled="False" 
+            Style="{StaticResource MainButtonStyle}"
+            Clicked="SaveBtn_OnClicked"/>
+        <Button 
+            x:Name="cancelBtn" 
+            Text="Cancel" 
+            Style="{StaticResource CancelButtonStyle}"/>
+    </StackLayout>
+</ContentPage>
